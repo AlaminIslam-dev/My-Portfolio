@@ -26,6 +26,9 @@ h3{
     width: 1000px;
     height: 140px;
 }
+.right-half-box img {
+  padding-left: 120px;
+}
 
 p{      font-size: 25px;
         margin-right: 100px;
@@ -331,6 +334,72 @@ section{
     font-weight: bold;
   }
 
+  /* BEHANCE PROFILE */
+  .behance {
+    margin: 03px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+  .behance::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0077B5;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* glow */
+  .behance::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .behance:hover::before {
+    opacity: 1;
+  }
+  
+  .behance:active:after {
+    background: transparent;
+  }
+  
+  .behance:active {
+    color: #000;
+    font-weight: bold;
+  }
+
   .down-right-area{
     margin-top: -600px;
     margin-left: 920px;
@@ -350,6 +419,7 @@ section{
   .offer-list li{
     margin: 10px;
     color: dimgray;
+    list-style: none;
   }
   .bold{
     font width:700px;
@@ -359,12 +429,38 @@ section{
   .experience-area{
     padding-top: 500px;
     padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
   }
+  .experience-Heading{
+    font-size: 65px;
+    color: palevioletred;
+    text-align: center;
+  }
+
+  .experience-wrapper{
+    display: flex;
+    gap: 60px;
+  }
+
   .left-box{
     padding-top: 1px;
-    float: left;
-    box-shadow: 10px 10px 40px grey
+    box-shadow: 5px 5px 20px grey;
+    padding-left: 80px;
+    border-radius: 5px;
   }
   .left-box h2{
-    color: #d1d40b;
+      color: #d1d40b;
+      text-align: center;
+      font-size: 30px;
+  }
+
+  .Key-expert-list{
+    list-style: none;
+    margin-left: -44px;
+    font-size: 20px;
+  }
+  .Heading-Graphics{
+    font-size: 40px;
+    text-align: center;
   }
