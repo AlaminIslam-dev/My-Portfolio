@@ -3,6 +3,9 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg,  #4b6cb7 0%, #182848 100%);
+
   }
 h1{
     font-size: 50px;
@@ -17,6 +20,7 @@ h3{
         padding-top: 30px;
         width: 1000px;
         height: 140px;
+        color: orange;
 }  
 .right-half-box{
     margin-top: -120px;
@@ -35,14 +39,14 @@ p{      font-size: 25px;
         text-align: justify;
         padding-right: 75px;
         font-family: cursive;
-        color: dimgray;
+        color: rgb(255, 255, 255);
 }
 .skill1{
-    color: blueviolet;
+    color: #26db2f;
     font-size: 30px;
 }
 .skill2{
-color: brown;
+color: #26db2f;
 font-size: 30px;
 }
 section{
@@ -400,6 +404,7 @@ section{
     font-weight: bold;
   }
 
+/* WEB CSS */
   .down-right-area{
     margin-top: -600px;
     margin-left: 920px;
@@ -409,21 +414,27 @@ section{
     height: 140px;
   }
   .down-right-area h2{
-    color: blueviolet;
+    color: orange;
     font-size: 40px;
+  }
+  .down-right-area h4{
+    font-size: 30px;
+    color: #73bb44;
   }
 
   .offer-list{
   margin-top: 10px;
+  margin-left: -55px;
+  font-size: 23px;
   }
   .offer-list li{
     margin: 10px;
-    color: dimgray;
+    color: #FF7300;
     list-style: none;
   }
   .bold{
     font width:700px;
-    color: #FF7300;
+    color: #d87093
   }
   
   .experience-area{
@@ -434,11 +445,23 @@ section{
   }
   .experience-Heading{
     font-size: 65px;
-    color: palevioletred;
+    color: orange;
     text-align: center;
   }
 
   .experience-wrapper{
+    display: flex;
+    gap: 60px;
+  }
+
+  .experience-area2{
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+  }
+
+  .experience-wrapper-down{
     display: flex;
     gap: 60px;
   }
@@ -454,13 +477,60 @@ section{
       text-align: center;
       font-size: 30px;
   }
+  .left-box h3{
+    color: #73bb44;
+  }
+  .text_h2_left{
+    margin-left: -75px;
+  }
 
   .Key-expert-list{
     list-style: none;
     margin-left: -44px;
     font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
   }
   .Heading-Graphics{
     font-size: 40px;
     text-align: center;
+    color: #73bb44;
   }
+  .Heading-Graphics_2{
+    font-size: 30px;
+  }
+
+  .text_align_title{
+    margin-left: 50px;
+    font-size: 35px;
+  }
+  .text_h2_down-right{
+    text-align: center;
+  }
+  .text_align_title_left{
+    font-size: 36px;
+    margin-left: 10px;
+  }
+
+  /* TESTIMONIALS */
+  #testimonials {
+    text-align: center;
+    margin: 50px 0;
+ }
+ 
+ .testimonial {
+    background-color: #300303;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+ 
+ .testimonial p {
+    font-size: 1.2em;
+    font-style: italic;
+ }
+ 
+ .testimonial strong {
+    font-weight: bold;
+ }
